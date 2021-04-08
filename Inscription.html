@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Get Groovy-connexion</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Get Groovy</h2>
+        <table>
+            <tr>
+                <th><u><a href="Acceuil.html">Acceuil</a></u></th>
+                <th><u><a href="Albums.html">Albums</a></u></th>
+                <th><u><a href="#Promotions">Promotions</a></u></th>
+                <th><u><a href="Contact.html">Contact</a></u></th>
+                <th><u><a href="Inscription.html">Insecription</a></u></th>
+    
+            </tr>
+        </table>
+        <img src="img/img1.jpg" alt="ZIED Amdouni" height="400px" width="1100px">
+    </div>
+    <form action="/insecription.html" method="get" id="nameform">
+         <table border="1">
+    
+           <tr >
+              <td rowspan="8">Fiche Personnelle</td>
+              <td><label>Nom:</label></td>
+              
+              <td><input type="text" id="name" name="neme" value="Nom"  required minlength="3" maxlength="20" size="10">
+              </td>
+              </tr>
+              <tr>
+             <td><label>Prénom:</label></td>
+             <td><input type="text" id="name" name="neme" value="Prénom"  required minlength="3" maxlength="20" size="10">
+             </td>
+             </tr>
+             <tr>
+             <td><label>Date de naissance:</label></td>
+              <td><input type="date" id="start" name="trip-start"
+                value="2018-07-22"
+                min="1900-01-01" max="2018-12-31">
+              </td>
+              </tr>
+              <tr>
+             <td><label>sex:</label></td>
+            <td><input type="radio"  name="genre" value="f"checked>femme
+                <input type="radio"  name="genre" value="M"checked>Homme
+              </td>
+              </tr>
+              <tr>
+             <td><label for="email">Adresse mail:</label></td>
+            <td><input type="email" placeholder="contact@exemple.com"  name="email"></td>
+            </tr>
+            <tr>
+             <td><label>Téléphone:</label></td>
+             <td><input type="tel" id="phone" name="Téléphone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>
+         
+         <small>Format: 12-34-56-78</small>
+             </td>
+            </tr>
+            <tr>
+             <td>Profession:</td>
+             <td><select name="pays">
+                <option value="tn">Tunisie</option><br>
+                <option value="FR">FRANCE</option><br>
+                <option value="ca">Canada</option><br>
+
+            </select></td>
+             </tr>
+             <tr>
+                 <td><label for="comment">Adresse:</label></td>
+               <td><textarea name="comment" id="comment" cols="30" rows="5"></textarea></td>
+               </tr>
+        
+        <tr>
+            <td rowspan="2"><label for="pays">Préférences:</label>
+            
+        </td>
+           <td colspan="2">Style de musique</td>
+           </tr>
+     <tr>
+                <td><input type="checkbox" id="style1" value="R&B">
+                 <label for=" style1"> R&B </label><br>
+                 <input type="checkbox" id="style2" value="Soul">
+                 <label for=" style2">Soul</label><br>
+                 <input type="checkbox" id="styl3" value="jaz">
+                 <label for=" style3">jaz</label><br></td>
+
+                <td><input type="checkbox" id="style4" value="Rock">
+                    <label for=" style1"> Rock </label><br>
+                    <input type="checkbox" id="style5" value="Electronic">
+                    <label for=" style2">Electronic</label><br>
+                    <input type="checkbox" id="styl6" value="Classic">
+                    <label for=" style3">Classic</label><br></td>
+               </tr>
+               <tr>
+                   <td rowspan="3">Information de connexion</td>
+                   <td><label>Login:</label></td>
+                   
+                   <td><input type="text" id="name" name="neme" required minlength="3" maxlength="20" size="10"><br>
+                   </td>
+                   
+               </tr>
+               <tr>
+                   <td>Mot de passe</td>
+                   <td><input type="text" id="name" name="neme" required minlength="3" maxlength="20" size="10"><br>
+                   </td>
+                   
+               </tr>
+               <tr>
+                <td><label for="pass">Confirm Password:</label></td>
+                <td><input type="password" id="pass" name="password"
+                       minlength="8" required></td>
+               </tr>
+               <tr align="center">
+                   
+                   <td align="center"><button type="Envoyer" form="nameform" value="Submit">Envoyer</button>
+                     </td>
+                     <td align="center"><button type="Envoyer" form="nameform" value="Submit">Envoyer</button>
+                     </tr>
+                    </form>
+   </table>
+</form> 
+</body>
+</html>
