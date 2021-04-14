@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style></style>
-    
+
+<h2>Contacte Me</h2>
+
+
   
+  <div class="header" id="myHeader">
+      <table>
+          <tr>
+              <th><u><a href="Acceuil.html">Acceuil</a></u></th>
+              <th><u><a href="Albums.html">Albums</a></u></th>
+              <th><u><a href="Promotions.html#Promotions">Promotions</a></u></th>
+              <th><u><a href="Contact.html">Contact</a></u></th>
+              <th><u><a href="Inscription.html">Insecription</a></u></th>
+  
+          </tr>
+      </table>
+      <img src="img/sidi bo.jpeg" alt="header" height="200px" width="1200px">
     
-    <h2>Form on Hero Image</h2>
-    <div class="bg-img">
-      <form action="/action_page.php" class="container">
-        <h1>Login</h1>
-    
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit" class="btn">Login</button>
-      </form>
+  </div>
+  <form action="/action_page.php">
+    <div class="row">
+      
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+      
     </div>
-    
-    <p>This example creates a form on a responsive image. Try to resize the browser window to see how it always will cover the whole width of the screen, and that it scales nicely on all screen sizes.</p>
-    
-    </body>
-    </html>
-    
-    <h2 class="Haut"><a href="#">Haut de page</a></h2>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:rgb(255, 255, 255)" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:rgb(255, 255, 255)" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

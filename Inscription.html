@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Get Groovy-connexion</title>
+    <script type="text/javascript">
+
+        //<![CDATA[
+        
+        function valider(frm){
+          if(frm.elements['prenom'].value != "") {
+            return true;
+          }
+          else {
+            alert("Saisissez le prénom");
+            return false;
+          }
+        }
+        
+        //]]>
+        </script>
 </head>
 <body>
   
@@ -36,19 +52,19 @@
               <td rowspan="8">Fiche Personnelle</td>
               <td><label>Nom:</label></td>
               
-              <td><input type="text" id="name" name="neme" value="Nom"  required minlength="3" maxlength="20" size="10">
+              <td><input class="controle" type="text" name="Nom" required pattern="[0-9a-zA-Z-\.]{3,12}" placeholder="De 3 à 12 caractères">
               </td>
               </tr>
               <tr>
              <td><label>Prénom:</label></td>
-             <td><input type="text" id="name" name="neme" value="Prénom"  required minlength="3" maxlength="20" size="10">
+             <td><input class="controle" type="text" name="Prénom" required pattern="[0-9a-zA-Z-\.]{3,12}" placeholder="De 3 à 12 caractères">
              </td>
              </tr>
              <tr>
              <td><label>Date de naissance:</label></td>
               <td><input type="date" id="start" name="trip-start"
-                value="2018-07-22"
-                min="1900-01-01" max="2018-12-31">
+                value="2020-07-22"
+                min="1900-01-01" max="2020-12-31">
               </td>
               </tr>
               <tr>
@@ -59,7 +75,7 @@
               </tr>
               <tr>
              <td><label for="email">Adresse mail:</label></td>
-            <td><input type="email" placeholder="contact@exemple.com"  name="email"></td>
+            <td><input class="controle" type="email" name="mail" required placeholder="mail@serveur.com">
             </tr>
             <tr>
              <td><label>Téléphone:</label></td>
@@ -114,9 +130,9 @@
                </tr>
                <tr>
                    <td>Mot de passe</td>
-                   <td><input type="text" id="name" name="neme" required minlength="3" maxlength="20" size="10"><br>
+                   <td><input type="password" id="pass" name="password" required minlength="4" maxlength="8" size="10"><br>
                    </td>
-                   
+            
                </tr>
                <tr>
                 <td><label for="pass">Confirm Password:</label></td>
